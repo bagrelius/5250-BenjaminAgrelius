@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Mine.Views.Game
+namespace Mine.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class GamePage : ContentPage
