@@ -16,6 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Game\" />
+    <EmbeddedResource Update="Views\Game\GamePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
