@@ -11,12 +11,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Views\Items\**" />
-    <EmbeddedResource Remove="Views\Items\**" />
-    <None Remove="Views\Items\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.1874" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.6.0" />
   </ItemGroup>
@@ -25,5 +19,9 @@
     <EmbeddedResource Update="Views\Game\GamePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Items\" />
   </ItemGroup>
 </Project>
