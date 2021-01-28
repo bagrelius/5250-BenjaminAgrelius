@@ -25,9 +25,22 @@ namespace Mine.Views
             BindingContext = this;
         }
 
+        public ItemUpdatePage()
+        {
+            InitializeComponent();
+
+            Item = new ItemModel
+            {
+                Text = "Item name",
+                Description = "This is the description."
+            };
+
+            BindingContext = this;
+        }
+
         async void Save_Clicked(object sender, EventArgs e)
         {
-            MessagingCenter.Send(this, "AddItem", Item);
+            MessagingCenter.Send(this, "UpdateItem", Item);
             await Navigation.PopModalAsync();
         }
 
