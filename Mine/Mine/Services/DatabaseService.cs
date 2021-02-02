@@ -58,6 +58,7 @@ namespace Mine.Services
 
         public async Task<IEnumerable<ItemModel>> IndexAsync(bool forceRefresh = false)
         {
+            //Fetching the list of items form the database
             var result = await Database.Table<ItemModel>().ToListAsync();
             return result;
         }
