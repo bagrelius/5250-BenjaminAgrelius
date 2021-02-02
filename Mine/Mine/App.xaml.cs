@@ -13,7 +13,9 @@ namespace Mine
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
+            //DependencyService.Register<MockDataStore>();
+            //Sets where to look for dependency when its called in ItemIndexViewModel
+            DependencyService.Register<DatabaseService>();
             MainPage = new MainPage();
         }
 
