@@ -67,9 +67,25 @@ namespace Mine.Services
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Searches Database for corresponding id passed in
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>returns id if successfully found</returns>
         public Task<ItemModel> ReadAsync(string id)
         {
-            throw new NotImplementedException();
+
+            if (id == null)
+            {
+                return null;
+            }
+
+            //Call Database to read Id
+            //Find First Id that matched the id passed in
+            var result = Database.Table<ItemModel>().FirstOrDefaultAsync(m => m.Id.Equals(id));
+
+            return result;
+
         }
 
         public async Task<IEnumerable<ItemModel>> IndexAsync(bool forceRefresh = false)
