@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace Mine.Constants
+namespace Mine
 {
-    class Constants
+    public static class Constants
     {
         public const string DatabaseFilename = "TodoSQLite.db3";
 
