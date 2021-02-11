@@ -71,5 +71,17 @@ namespace NUnitTests.HelpersTests
             //Assert
             Assert.AreEqual(0, result);
         }
+
+        [Test]
+        public void RollDice_Invalid_Roll_1_Dice_0_Should_Return_Zero()
+        {
+            //Arrange
+
+            //Act
+            var result = DiceHelper.RollDice(0, 10);
+            //Reset
+            //Assert
+            Assert.AreEqual(0, result);
+        }
     }
 }
