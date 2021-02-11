@@ -100,5 +100,21 @@ namespace NUnitTests.HelpersTests
 
         }
 
+        [Test]
+        public void RollDice_Valid_Roll_3_Dice_10_Fixed_5_Should_Return_5()
+        {
+            //Arrange
+            DiceHelper.ForcedRandomValue = 5;
+            DiceHelper.ForceRollsToNotRandom = true;
+
+            //Act
+            var result = DiceHelper.RollDice(1, 10);
+            //Reset
+            DiceHelper.ForceRollsToNotRandom = false;
+            //Assert
+            Assert.AreEqual(15, result);
+
+        }
+
     }
 }
