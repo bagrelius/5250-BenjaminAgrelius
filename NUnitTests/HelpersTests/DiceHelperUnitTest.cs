@@ -108,7 +108,7 @@ namespace NUnitTests.HelpersTests
             DiceHelper.ForceRollsToNotRandom = true;
 
             //Act
-            var result = DiceHelper.RollDice(1, 10);
+            var result = DiceHelper.RollDice(3, 10);
             //Reset
             DiceHelper.ForceRollsToNotRandom = false;
             //Assert
