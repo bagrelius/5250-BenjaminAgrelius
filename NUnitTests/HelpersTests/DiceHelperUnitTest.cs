@@ -78,7 +78,7 @@ namespace NUnitTests.HelpersTests
             //Arrange
 
             //Act
-            var result = DiceHelper.RollDice(0, 10);
+            var result = DiceHelper.RollDice(1, 0);
             //Reset
             //Assert
             Assert.AreEqual(0, result);
